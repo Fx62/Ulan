@@ -1,6 +1,9 @@
 #!/bin/env
 
-number = int(input("Insert a number: "))
+import random
+
+#number = int(input("Insert a number: "))
+number = random.randrange(2, 1000000)
 while (number != 1):
     print(number, ", ", end='')
     if (number % 2 == 0):
@@ -10,3 +13,4 @@ while (number != 1):
         number += 1
 print(number)
 exit()
+
